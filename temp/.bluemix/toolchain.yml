@@ -1,0 +1,16 @@
+version: 2
+template:
+  name: Build your own toolchain
+  description: POC-toolchain-sm-kl
+toolchain:
+  name: POC-toolchain-sm-kl
+services:
+  secretsmanager00:
+    parameters:
+      label: secret-manager-poc-toolchain-sm
+      name: secret-manager-poc-toolchain-sm
+      region: ibm:yp:eu-de
+      resource-group: rg_karina
+      instance-name: poc-toolchain-sm-kl
+      integration-status: ""
+    service_id: secretsmanager
